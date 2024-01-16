@@ -25,3 +25,5 @@ function EscapePair()
 end
 
 vim.api.nvim_set_keymap("i", "<C-l>", "<cmd>lua EscapePair()<CR>", { noremap = true, silent = true })
+
+vim.lsp.set_log_level("ERROR")

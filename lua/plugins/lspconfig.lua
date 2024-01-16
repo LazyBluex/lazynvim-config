@@ -3,6 +3,7 @@ return -- add pyright to lspconfig
   "neovim/nvim-lspconfig",
   ---@class PluginLspOpts
   opts = {
+    inlay_hints = { enabled = true },
     ---@type lspconfig.options
     servers = {
       pyright = {},
@@ -13,7 +14,6 @@ return -- add pyright to lspconfig
           "--clang-tidy",
           "--background-index",
           "--pch-storage=memory",
-          "--suggest-missing-includes",
           "--header-insertion=iwyu",
         },
         single_file_support = true,
@@ -23,7 +23,7 @@ return -- add pyright to lspconfig
           "objc",
           "objcpp",
           "cuda",
-          --"proto"
+          "proto",
         },
         init_options = {
           fallbackFlags = {
