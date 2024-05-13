@@ -11,8 +11,8 @@
 -- vim.v.{name}: 预定义变量
 --
 -- 前缀设置为空格 <leader>
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- vim.g.mapleader = " "
+-- vim.g.maplocalleader = " "
 
 -- map映射 noremap 表示非递归
 -- n 表示在普通模式下生效

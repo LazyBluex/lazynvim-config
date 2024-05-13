@@ -23,6 +23,7 @@ return -- add pyright to lspconfig
           "objc",
           "objcpp",
           "cuda",
+          "cuda-cpp",
         },
         init_options = {
           fallbackFlags = {
