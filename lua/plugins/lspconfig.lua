@@ -7,7 +7,6 @@ return -- add pyright to lspconfig
     ---@type lspconfig.options
     servers = {
       pyright = {},
-      angularls = {},
       clangd = {
         cmd = {
           "clangd",
